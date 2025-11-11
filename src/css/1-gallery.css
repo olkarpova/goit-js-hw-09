@@ -1,0 +1,40 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    /* горизонтальні й вертикальні відступи */
+    list-style: none;
+    padding: 0;
+    margin: 100px 156px;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex-basis: calc((100% - 48px) / 3);
+    /* три картинки в ряд, з gap 24px */
+    /* Можеш варіювати flex-basis, щоб макет відповідав твоєму дизайну */
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.test {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    backdrop-filter: blur(15px) saturate(180%);
+    -webkit-backdrop-filter: blur(15px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
