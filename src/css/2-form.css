@@ -1,0 +1,72 @@
+/* Загальні стилі сторінки */
+body {
+    font-family: "Montserrat";
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Контейнер форми */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 408px;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Текст міток */
+.feedback-form label {
+    display: flex;
+    flex-direction: column;
+    color: #2e2f42;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Поля вводу */
+.feedback-form input,
+.feedback-form textarea {
+    margin-top: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #2e2f42;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Ховер та фокус */
+.feedback-form input:hover,
+.feedback-form textarea:hover,
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+    border-color: #4e75ff;
+}
+
+/* Кнопка */
+.feedback-form button {
+    align-self: start;
+    padding: 8px 24px;
+    background-color: #4e75ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Ховер для кнопки */
+.feedback-form button:hover {
+    background-color: #6c8cff;
+}
